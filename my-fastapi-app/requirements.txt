@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+ultralytics
+opencv-python-headless
+python-multipart
+gradio>=3.0
