@@ -1,12 +1,11 @@
 # Use an official Python image (slim to keep it lightweight)
 FROM python:3.12-slim
 
-
 RUN apt-get update
 RUN apt-get install -y libgl1-mesa-glx
 RUN apt-get install -y python3-opencv
-RUN pip install opencv-python
-RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
+RUN pip install opencv-python
+RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 
 # Install system dependencies required by OpenCV
 RUN apt-get update && apt-get install -y \
